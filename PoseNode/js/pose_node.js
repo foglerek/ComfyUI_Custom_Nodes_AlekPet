@@ -368,7 +368,7 @@ class OpenPose {
 
     const uploadFile = async (blobFile) => {
       try {
-        const resp = await fetch("/upload/image", {
+        const resp = await fetch("./upload/image", {
           method: "POST",
           body: blobFile,
         });

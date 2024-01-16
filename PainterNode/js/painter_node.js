@@ -1235,7 +1235,7 @@ class Painter {
 
     const uploadFile = async (blobFile) => {
       try {
-        const resp = await fetch("/upload/image", {
+        const resp = await fetch("./upload/image", {
           method: "POST",
           body: blobFile,
         });
@@ -1498,7 +1498,7 @@ function PainterWidget(node, inputName, inputData, app) {
 // ================= CREATE EXTENSION ================
 async function saveData() {
   try {
-    const rawResponse = await fetch("/alekpet/save_node_settings", {
+    const rawResponse = await fetch("./alekpet/save_node_settings", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -1515,7 +1515,7 @@ async function saveData() {
 
 async function loadData() {
   try {
-    const rawResponse = await api.fetchApi("/alekpet/loading_node_settings");
+    const rawResponse = await api.fetchApi("./alekpet/loading_node_settings");
     if (rawResponse.status !== 200)
       throw new Error(`Error painter save settings: ${rawResponse.statusText}`);
 
