@@ -7,7 +7,7 @@
 
 import { app } from "../../scripts/app.js";
 import { api } from "../../scripts/api.js";
-import { fabric } from "../lib/fabric.js";
+import { fabric } from "./lib/fabric.js";
 
 // ================= FUNCTIONS ================
 const painters_settings_json = false; // save settings in JSON file on the extension folder [big data settings includes images] if true else localStorage
