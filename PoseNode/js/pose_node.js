@@ -7,7 +7,7 @@
  */
 
 import { app } from "../../scripts/app.js";
-import { fabric } from "./lib/fabric.js";
+import { fabric } from "../../lib/fabric.js";
 
 fabric.Object.prototype.transparentCorners = false;
 fabric.Object.prototype.cornerColor = "#108ce6";
